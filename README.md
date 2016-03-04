@@ -1,4 +1,7 @@
 # flictoggl
+*Track time on [Toggl](https://www.toggl.com) using a [Flic](https://flic.io/) button.*
+
+`flictoggl` connects a [Flic](https://flic.io/) smart button to your [Toggl](https://www.toggl.com) account for simple *on/off* time tracking. Hit the button to start recording time. Hit it again to stop. Simple as pie.
 
 ## Usage
 ### Step 1: Deploy to Heroku
