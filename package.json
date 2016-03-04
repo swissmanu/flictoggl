@@ -4,9 +4,6 @@
   "private": true,
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
   "dependencies": {
