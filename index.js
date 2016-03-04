@@ -1,5 +1,6 @@
 var TogglClient = require('toggl-api')
 var express = require('express')
+var bodyParser = require('body-parser')
 
 var app = express();
 
@@ -8,9 +9,16 @@ function send(res, statusCode, text) {
 }
 
 app.set('port', (process.env.PORT || 5000));
+app.use(bodyParser.text({ type: '*/*' }))
 
-app.post('/:apiToken', function(req, res) {
-  var apiToken = req.params.apiToken
+app.post('/', function(req, res) {
+  var apiToken = req.body
+
+  if(!apiToken || apiToken.length > 40) {
+    send(res, 500, { status: 'error', message: 'Invalid API Token' })
+    return
+  }
+
   var toggl = new TogglClient({ apiToken: apiToken });
 
   toggl.getCurrentTimeEntry(function(err, timeEntry) {
