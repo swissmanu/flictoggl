@@ -1,0 +1,19 @@
+{
+  "name": "flictoggl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Manuel Alabor <manuel@alabor.me>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4",
+    "toggl-api": "0.0.4"
+  },
+  "engines": {
+    "node": "5.7.1"
+  }
+}
