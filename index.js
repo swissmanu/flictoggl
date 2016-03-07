@@ -12,7 +12,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.text({ type: '*/*' }))
 
 app.post('/', function(req, res) {
-  var apiToken = req.body
+  var apiToken = req.body || req.query.apiToken;
 
   if(!apiToken || apiToken.length > 40) {
     send(res, 500, { status: 'error', message: 'Invalid API Token' })
