@@ -23,10 +23,11 @@ Make sure you note down the URL of the deployed Heroku app for later use in step
 
 ### Step 3: Configure Flic App
 * Open the Flic app on your phone
-* Add an `HTTP Request` action
+* Add an `HTTP Request` or `Internet Request` action
 * Enter the URL of the deployed Heroku app from step 1
 * Select `POST` as request type
 * Paste the API token from step 2 to the `Body` field
+* If the `Body` field does not exist (as in the current Android App), specify the API token with a query parameter. Example `https://****.herokuapp.com/?apiToken=token`
 
 ![Button](screenshots/config-1.jpg)
 ![Action](screenshots/config-2.jpg)
