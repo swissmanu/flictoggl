@@ -67,6 +67,7 @@ RESULT=`flictoggl [TogglAPIToken]`
 ```
 
 Hook the script to `hax-with-flic`:
+
 ![hax-with-flic](screenshots/config-3.png)
 
 ---
