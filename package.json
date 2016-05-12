@@ -1,6 +1,5 @@
 {
   "name": "flictoggl",
-  "version": "1.0.0",
   "private": true,
   "description": "",
   "main": "index.js",
@@ -19,11 +18,15 @@
     "node": "5.7.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^1.1.6"
+    "cz-conventional-changelog": "^1.1.6",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
