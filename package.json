@@ -1,7 +1,6 @@
 {
   "name": "flictoggl",
-  "private": true,
-  "description": "",
+  "description": "Track time on Toggl using a Flic button",
   "main": "index.js",
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
