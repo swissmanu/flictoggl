@@ -6,6 +6,10 @@
   "main": "index.js",
   "author": "Manuel Alabor <manuel@alabor.me>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swissmanu/flictoggl"
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
@@ -13,5 +17,13 @@
   },
   "engines": {
     "node": "5.7.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

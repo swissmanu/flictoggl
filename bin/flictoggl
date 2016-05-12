@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+if (process.argv.length !== 3) {
+  console.log('Usage: flictoggl [Toggl API Token]')
+  process.exit(1)
+}
+
+var apiToken = process.argv[2]
+var toggl = require('../lib/toggl')
+
+toggl(apiToken)
+  .then(function (status) {
+    console.log(status.message)
+  }, function (status) {
+    console.info(status.message)
+    process.exit(2)
+  })
