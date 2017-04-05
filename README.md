@@ -31,7 +31,7 @@ Make sure you note down the URL of the deployed Heroku app for later use in step
 * Add an `HTTP Request` action
 * Enter the URL of the deployed Heroku app from step 1
 * Select `POST` as request type
-* Paste the API token from step 2 to the `Body` field
+* Enter `apiToken=[token]` as `Body`, where `[token]` is to be replaced with the API token from step 2
 
 ![Button](screenshots/config-1.jpg)
 ![Action](screenshots/config-2.jpg)
